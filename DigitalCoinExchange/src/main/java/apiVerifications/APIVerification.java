@@ -18,8 +18,8 @@ public class APIVerification {
 		JSONArray array = new JSONArray(response.getBody().asString());
 		for (int i = 0; i < array.length(); i++) {
 			JSONObject obj = array.getJSONObject(i);
-			System.out.println(obj.get(key));
-			//assertEquals("Response does not have " + value, value, obj.get(key));
+			boolean isKeyPresent = obj.get(key) != null ? true : false;
+			assertTrue(key +" Key is not present", isKeyPresent);
 		}
 	}
 

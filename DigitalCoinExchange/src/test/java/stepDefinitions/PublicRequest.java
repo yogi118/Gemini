@@ -9,11 +9,11 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
 
-public class TestScenarioSteps {
+public class PublicRequest {
 
 	private TestScenario testScenario;
 
-	public TestScenarioSteps() {
+	public PublicRequest() {
 		testScenario = new TestScenario();
 	}
 

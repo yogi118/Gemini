@@ -1,5 +1,6 @@
 package commonUtils;
 
+import java.time.Instant;
 import java.util.Random;
 
 import org.apache.commons.lang3.RandomStringUtils;
@@ -16,5 +17,9 @@ public class JavaUtilis {
 	public static String randomStrig() {
 		String randomSTring = RandomStringUtils.randomAlphabetic(8);
 		return randomSTring;
+	}
+	
+	public static String timestamp() {
+		return Instant.now().getEpochSecond() + "";
 	}
 }

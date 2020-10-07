@@ -13,4 +13,9 @@ public class PostAPIBuilder {
 	public static void post(Map<String, String> body) {
 		response = given().contentType(ContentType.JSON).body(body).when().post();
 	}
+	
+	public static void post(Map<String, String> headerConfiguation, String url) {
+		response = given().when().headers(headerConfiguation).post(url);
+	}
+	
 }
