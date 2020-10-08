@@ -2,7 +2,7 @@ Feature: New Place order
   As the Gemini Exchange user, I can place a new buy oredr  
   so that I can buy the new didgital coins
 
-  @Regression @Smoke @Broken @post @wip
+  @Regression @Smoke @Broken @post
   Scenario Outline: As an end user, I want to place new buy order for digital coin
     Given I have "<base_uri>" and "<base_path>" for fari model
     When I want to place new purchase order for "<symbol>" with quantity "<amount>" and price "<price>" of "<type>" type
